@@ -124,7 +124,7 @@ class PuncProcessor(DataProcessor):
             self._read_tsv(os.path.join(data_dir, "test.txt")), "test")
 
     def get_labels(self):
-        return ['O', 'PERIOD', 'COMMA', 'COLON', 'QMARK', 'EXCLAM', 'SEMICOLON', '[CLS]', '[SEP]']
+        return ['O', 'PERIOD','COMMA','QMARK','EXCLAM','COLON','SEMICOLON','THRPE','ENTER','HYPHEN','OPARENTHESIS','CPARENTHESIS','OBRACE','CBRACE','OBRACKET','CBRACKET','UNDERSCORE','GTHAN','LTHAN','ATSGIN','HSIGN','PERCENT','EQUAL','FSLASH','BACKSLASH', '[CLS]', '[SEP]']
 
     def _create_examples(self, lines, set_type):
         examples = []

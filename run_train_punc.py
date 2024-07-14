@@ -409,7 +409,7 @@ def main():
                                     temp_1.append(label_map[label_ids[i][j]])
                                     temp_2.append(label_map.get(logits[i][j], 'PAD'))
 
-                    punc_marks = ['PERIOD', 'COMMA', 'COLON', 'QMARK', 'EXCLAM', 'SEMICOLON']
+                    punc_marks = ['PERIOD','COMMA','QMARK','EXCLAM','COLON','SEMICOLON','THRPE','ENTER','HYPHEN','OPARENTHESIS','CPARENTHESIS','OBRACE','CBRACE','OBRACKET','CBRACKET','UNDERSCORE','GTHAN','LTHAN','ATSGIN','HSIGN','PERCENT','EQUAL','FSLASH','BACKSLASH']
                     report = classification_report(y_true, y_pred, digits=4, labels=punc_marks)
                     output_eval_file = os.path.join(args.output_dir, "eval_results.txt")
 
@@ -497,7 +497,7 @@ def main():
                         temp_1.append(label_map[label_ids[i][j]])
                         temp_2.append(label_map.get(logits[i][j], 'PAD'))
 
-        punc_marks = ['PERIOD', 'COMMA', 'COLON', 'QMARK', 'EXCLAM', 'SEMICOLON']
+        punc_marks = ['PERIOD','COMMA','QMARK','EXCLAM','COLON','SEMICOLON','THRPE','ENTER','HYPHEN','OPARENTHESIS','CPARENTHESIS','OBRACE','CBRACE','OBRACKET','CBRACKET','UNDERSCORE','GTHAN','LTHAN','ATSGIN','HSIGN','PERCENT','EQUAL','FSLASH','BACKSLASH']
         report = classification_report(y_true, y_pred, digits=4, labels=punc_marks)
         output_test_file = os.path.join(args.output_dir, "test_results.txt")
 
